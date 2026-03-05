@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Subject Grade Calculator</title>
+    <link rel="stylesheet" href="aadarsh.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Grade Calculator</h1>
+
+        <div class="input-row">
+            <label for="subject">Subject:</label>
+            <select id="subject">
+                <option value="dsa_lab">DSA - Lab</option>
+                <option value="web_app">Web Application Programming</option>
+                <option value="maths">Mathematics 2</option>
+                <option value="chemistry">Applied Chemistry</option>
+                <option value="english">Advanced Technical English</option>
+            </select>
+        </div>
+        <br>
+
+        <div class="input-row">
+            <label>Contest 1:</label>
+            <input type="number" id="contest1" placeholder="Score out of 100">
+        </div>
+        <br><div class="input-row">
+            <label>Contest 2:</label>
+            <input type="number" id="contest2" placeholder="Score out of 100">
+        </div>
+        <br>
+        <div class="input-row">
+            <label>Contest 3:</label>
+            <input type="number" id="contest3" placeholder="Score out of 100">
+        </div>
+        <br>
+
+        <hr>
+        <br>
+
+        <div class="input-row">
+            <label>IA1 Score:</label>
+            <input type="number" id="ia1" placeholder="Score out of 100">
+        </div>
+        <br>
+        <br>
+
+        <div class="input-row">
+            <label>IA2 Score:</label>
+            <input type="number" id="ia2" placeholder="Score out of 100">
+        </div>
+        <br>
+
+        <div class="input-row">
+            <label>Endterm Exam:</label>
+            <input type="number" id="endsem" placeholder="Score out of 100">
+        </div>
+        <br>
+
+        <div class="input-row">
+            <label>Project / Assignments / Problem-Solving:</label>
+            <input type="number" id="project" placeholder="Score out of 100">
+        </div>
+        <br>
+
+        <div class="input-row">
+            <label>Viva / Lab Exam / Mock / Problem Solving Contest</label>
+            <input type="number" id="viva" placeholder="Score out of 100">
+        </div>
+        <br>
+
+        <div class="input-row">
+            <label>Class Participation (CP):</label>
+            <input type="number" id="attendance" placeholder="Score out of 100">
+        </div>
+        <br>
+
+        <button class="calc-btn" onclick="calculate()">Calculate Total</button>
+
+        <div class="result-box">
+            Total Weighted Score: <span id="totalDisplay">0</span> / 100
+        </div>
+        <br>
+    </div>
+    <script src="aadarsh.js"></script>
+</body>
+
+</html>
